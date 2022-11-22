@@ -1,0 +1,19 @@
+.section {
+    padding-bottom: 94px;
+  }
+
+  .section__list {
+    display: flex;
+    justify-content: start;
+     
+  } 
+  
+   .section__item:not(:last-child) {
+    margin-right: 30px;
+  } 
+
+  .section__product {
+    position: relative;
+    top: 0;
+    left: 0;
+  }

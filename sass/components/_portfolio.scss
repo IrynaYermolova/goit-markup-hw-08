@@ -1,0 +1,33 @@
+.card-list-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .hero-last {
+    display: flex;
+    background-color: var(--main-bg-color);
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  
+  .button-container {
+    display:inline-flex;
+    margin-right: auto;
+    margin-left: auto;
+  
+  }
+  .poster-wrapper {
+    padding: 20px 24px;
+   
+  } 
+
+  .hero-list{
+    display:flex;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 50px;
+  }
+  

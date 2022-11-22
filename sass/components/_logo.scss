@@ -1,0 +1,40 @@
+.logo {
+    display: inline-block;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 93px;
+    justify-content: flex-start;
+  }
+  .first-part {
+    font-family: var(--second-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31 / 26);
+    letter-spacing: 0.03em;
+    color: rgba(33, 150, 243, 1);
+  }
+  .second-part {
+    font-family: var(--second-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31 / 26);
+    color: rgba(0, 0, 0, 1);
+  }
+  .finish-part {
+    font-family: var(--second-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31 / 26);
+    letter-spacing: 0.03em; 
+    color: rgba(255, 255, 255, 1);
+  }
+
+  .footer-logo {
+    display: flex;
+    margin-bottom: 20px;
+    
+  }
+  
