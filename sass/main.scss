@@ -1,6 +1,9 @@
 // util styles
 @import"./utils/variables";
 @import"./utils/v-hidden";
+@import"./utils/placeholgers";
+@import"./utils/breakpoints";
+
 
 // base styles
 @import"./base/reset";
@@ -27,5 +30,7 @@
 @import"./components/animations";
 @import"./components/modal";
 @import"./components/form2";
+@import"./components/header-menu";
+@import"./components/mobile-menu";
 
 

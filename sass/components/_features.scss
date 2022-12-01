@@ -1,41 +1,221 @@
 .features {
-    padding-top: 94px;
-    padding-bottom: 94px;
-    background: var(--main-bg-color);
+  @extend %section;
+  background: var(--main-bg-color);
+}
+
+.features-list {
+  display: block;
+ 
+  
+
+  @media screen and (min-width: $mobile) {
+    
+    max-width: 480px;
+  
   }
   
-  .features-list {
+  @media screen and (min-width: $tablet) {
+    max-width: 768px;
     display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  } 
     
-  }
-  .list-icon {
-    width: 270px;
-    height: 120px;
+  
+  @media screen and (min-width: $desktop) {
+    max-width: 1200px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #F5F4FA;
-    border-radius: 4px;
+    flex-wrap: nowrap;
+    align-items: normal;
+
+  }
+
+  
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+
+  &:not(:last-child) {
     margin-bottom: 30px;
   }
+
+  @media screen and (min-width: $mobile){
+    display: block;
+    width: 450px;
   
-  .features-icon {
-    width: 70px;
-    height: 70px;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 354px;
     
-  }
-  
-  .list:not(:last-child) {
-    margin-right: 30px;
+    
+
+    @media screen and (min-width: $desktop) {
+      width: 270px;
+    }
     
   }
 
-  .text {
-     
-    font-weight: 400;
-    font-size: 14px;
-    line-height: calc(24 / 14);
-    letter-spacing: 0.03em; 
-    color: var(--second-color);
+
+}
+.list-icon {
+  // width: 450px;
+  height: 120px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F5F4FA;
+  border-radius: 4px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: $mobile){
+    width: 450px;
+  }
+  
+  @media screen and (min-width: $tablet) {
+   width: 354px;
+  }
     
-   }
+  @media screen and (min-width: $desktop) {
+      width: 270px;
+  } 
+
+
+  
+}
+
+.features-icon {
+  width: 70px;
+  height: 70px;
+  margin: 25px 100px;
+  
+}
+
+.list:not(:last-child) {
+  margin-right: 30px;
+  
+}
+
+.text {
+   
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em; 
+  color: var(--second-color);
+  flex-basis: 354px;
+
+  @media screen and (min-width: $mobile) {
+    // width: 450px;
+    flex-basis: 450px;
+  }
+  @media screen and (min-width: $tablet) {
+    // width: 354px;
+    flex-basis: 354px;
+  }
+  @media screen and (min-width: $desktop) {
+    // width: 270px;
+    flex-basis: 270px;
+
+  }
+  
+ }
+
+
+
+// .features {
+//     @extend %section;
+
+//     background: var(--main-bg-color);
+   
+// }
+  
+//   .features-list {
+//     display: flex;
+//     flex-wrap: wrap;
+
+//     @media screen and (min-width: $mobile) {
+//       display: block;
+//     }
+
+//     // @media screen and (min-width: $tablet) {
+      
+//     //   flex-wrap: wrap;
+      
+
+//     // }
+//     // @media screen and (min-width: $desktop) {
+//     //   display: flex;
+//     //   flex-wrap: wrap;
+//     // }
+
+
+
+    
+//   }
+//      .list {
+//       max-width: 768px;
+
+//       @media screen and (min-width: $tablet) {
+//         width: calc(( 100%-60px ) /2 );
+
+//       }
+//     }
+    
+     
+      
+//       // @media screen and (min-width: $tablet) {
+//         // display: flex;
+//         // flex-wrap: wrap;
+//     //     flex-basis: calc(100% / 2);
+//     //  }
+    
+//   // .list {
+//   //   max-width: 450px;
+
+//   //   @media screen and (min-width: $tablet) {
+//   //     // width:calc( 100% - 60px / 2);
+//   //     flex-wrap: wrap;
+//   //     margin-right: 30px;
+//   //   }
+
+//   // }
+//   .list-icon {
+//     width: 450px;
+//     height: 120px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     background-color: #F5F4FA;
+//     border-radius: 4px;
+//     margin-bottom: 30px;
+
+//     @media screen and (min-width: $tablet) {
+//       width: 354px;
+//       flex-wrap: wrap;
+//       // margin-right: 30px;
+//     }
+
+//     @media screen and (min-width: $desktop) {
+//     width: 270px;
+//     }
+      
+   
+//   }
+  
+//   .features-icon {
+//     width: 70px;
+//     height: 70px;
+    
+//   }
+  
+//   .text {
+//     width: 354px; 
+//     font-weight: 400;
+//     font-size: 14px;
+//     line-height: calc(24 / 14);
+//     letter-spacing: 0.03em; 
+//     color: var(--second-color);
+}

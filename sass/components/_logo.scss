@@ -1,35 +1,65 @@
 .logo {
     display: inline-block;
-    padding-top: 24px;
-    padding-bottom: 25px;
-    margin-right: 93px;
-    justify-content: flex-start;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 15px;
+
+    @media screen and (min-width: $tablet) {
+      padding: 26px 88px 26px 15px;
+      
+    }
+    
+    @media screen and (min-width: $desktop) {
+      padding-top: 24px;
+      padding-bottom: 25px;
+      margin-right: 93px;
+    }
+
+
   }
   .first-part {
     font-family: var(--second-font);
     font-style: normal;
     font-weight: 700;
-    font-size: 26px;
-    line-height: calc(31 / 26);
+    font-size: 24px;
+    line-height: calc(28 / 24);
     letter-spacing: 0.03em;
     color: rgba(33, 150, 243, 1);
+
+    @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: calc(31 / 26);
+
+    }
   }
   .second-part {
     font-family: var(--second-font);
     font-style: normal;
     font-weight: 700;
-    font-size: 26px;
-    line-height: calc(31 / 26);
+    font-size: 24px;
+    line-height: calc(28 / 24);
     color: rgba(0, 0, 0, 1);
+
+    @media screen and (min-width: 1200px) {
+      font-size: 26px;
+      line-height: calc(31 / 26);
+  
   }
+}
   .finish-part {
     font-family: var(--second-font);
     font-style: normal;
     font-weight: 700;
-    font-size: 26px;
-    line-height: calc(31 / 26);
+    font-size: 24px;
+    line-height: calc(28 / 24);
     letter-spacing: 0.03em; 
     color: rgba(255, 255, 255, 1);
+
+    @media screen and (min-width: 1200px) {
+      font-size: 26px;
+      line-height: calc(31 / 26);
+  
+   }
   }
 
   .footer-logo {
@@ -37,4 +67,3 @@
     margin-bottom: 20px;
     
   }
-  

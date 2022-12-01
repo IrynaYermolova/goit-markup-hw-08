@@ -1,8 +1,13 @@
 .header-nav {
+    display: none;
+
+    @media screen and (min-width: $tablet) {
     display: flex;
     align-items: center;
     
-  }
+    }
+}  
+
 
   .header-nav-link {
     display: block;
