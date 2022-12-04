@@ -1,8 +1,18 @@
+.modal {
+  width: 450px;
+  
+
+  @media screen and (min-width: $desktop) {
+    width: 528px;
+    
+    
+  }
+}
+
 .form {
   
-    padding-right: 40px;
-    padding-left: 40px;
-    width: 528px;
+  padding-right: 40px;
+  padding-left: 40px;
    
   }
 
@@ -40,14 +50,23 @@
     fill: #212121;
     border: none;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: $desktop) {
+
+    }
   }
   .form-input {
-    width: 448px;
+    width: 370px;
     height: 40px;
     padding-left: 42px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: $desktop) {
+      width: 448px;
+      height: 40px;
+    }
 
     &:hover,
     &:focus {
@@ -76,6 +95,10 @@
     letter-spacing: 0.03em;
     color: var(--second-color);
 
+    @media screen and (min-width: $desktop) {
+
+    }
+
     & .form-textarea:focus-visible {
         border: 1px solid var(--accent-color);
         border-radius: 4px;
@@ -84,12 +107,18 @@
   }
   .form-textarea {
     resize: none;
-    width: 448px;
+    width: 370px;
     height: 120px;
     padding: 12px 16px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: $desktop) {
+      width: 448px;
+      height: 120px;
+      
+    }
 
     &:hover {
         border: 1px solid var(--accent-color);
@@ -137,12 +166,22 @@
     align-items: center;
     justify-content: center;
     font-weight: 400;
-    font-size: 14px;
-    line-height: calc(24 / 14);
+    font-size: 12px;
+    line-height: calc(14 / 12);
     letter-spacing: 0.03em;
     color: #757575;
     user-select: none;
     cursor: pointer;
+
+
+    @media screen and (min-width: $desktop) {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: calc(24 / 14);
+      letter-spacing: 0.03em;
+    } 
+
+
   } 
   
   .form-checkbox-icon {

@@ -137,7 +137,30 @@
       transition-property: fill;
       transition-duration: 250ms;
       transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+
+      @media screen and (min-width: $tablet) {
+        width: 14px;
+        height: 10px;
+      }
+      @media screen and (min-width: $desktop) {
+        width: 16px;
+        height: 12px;
+      }
   
+    }
+    .tel-icon {
+      transition-property: fill;
+      transition-duration: 250ms;
+      transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+
+      @media screen and (min-width: $tablet) {
+        width: 10px;
+        height: 14px;
+      }
+      @media screen and (min-width: $desktop) {
+        width: 10px;
+        height: 16px;
+      }
     } 
   
     .header-post-link:hover,

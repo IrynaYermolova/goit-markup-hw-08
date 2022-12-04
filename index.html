@@ -64,88 +64,9 @@
           <svg class="burger-icon"
             width="40"
             height="40">
-            <!-- fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          > -->
           <use class="burger-icon1" href="./images/icons.svg#menu-icon"></use>
-            <!-- <path
-              fill-rule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clip-rule="evenodd"
-            ></path> -->
           </svg>
         </button>
-      </div>
-      <!-- <button
-          class="button-menu__open js-open-menu"
-          type="button"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
-          <svg
-            class="button-menu--icon"
-            width="40"
-            height="40"
-            aria-label="Перемикач мобільного меню"
-          >
-            <use class="icon-menu" href="./images/icons.svg#menu-icon"></use>
-          </svg>
-        </button>
-
-        <div class="menu-container js-menu-container" id="mobile-menu">
-          <button class="button-menu__close js-close-menu" type="button">
-            <svg
-              class="button-menu--icon"
-              width="40"
-              height="40"
-              aria-label="Перемикач мобільного меню"
-            >
-              <use class="icon-close" href="./images/icons.svg#icon-close_menu"></use>
-            </svg>
-          </button>
-
-          <div>
-          <ul class="menu">
-            <li class="menu__item">
-              <a class="menu__link menu__link-current" href="./index.html">Студія</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="./portfolio.html">Портфоліо</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#">Контакти</a>
-            </li>
-          </ul>
-        </div>
-
-         <div class="menu-contacts">
-          <ul class="menu-contacts_list">
-            <li class="menu-contacts__tell">
-          <a class="menu__tell" href="tel:+380961111111">
-            +38 096 111 11 11</a>
-            </li>
-            <li class="menu-contacts__mail">
-          <a class="menu__mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
-          </li>
-        </ul>
-
-          <ul class="social-menu">
-              <li class="social-menu__iteam">
-                <a class="social-menu__link" href="#">Instagram</a>
-              </li>
-              <li class="social-menu__iteam">
-                <a class="social-menu__link" href="#">Twitter</a>
-              </li>
-              <li class="social-menu__iteam">
-                <a class="social-menu__link" href="#">Facebook</a>
-              </li>
-              <li class="social-menu__iteam">
-                <a class="social-menu__link" href="#">LinkedIn</a>
-              </li>
-            </ul>
-        </div>
-        </div> -->
       </div>
     </header>
     <main>
@@ -261,18 +182,23 @@
           </ul>
         </div>
       </section>
-      <!-- </section>
+      </section>
       <section class="team">
         <div class="container team__container">
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img
-                class="team__img"
-                src="./images/igor.jpg"
-                alt="Ігор Дем'яненко"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="./images/team.img/igor-tel.jpg 1x, ./images/team.img/igor-tel2x@2x.jpg 2x" media="(max-width: 767px )" type="image/jpeg"/>
+                <source srcset="./images/team.img/igor-desk1.jpg 1x, ./images/team.img/igor-desk2.jpg 2x" media="(min-width: 1200px )" type="image/jpeg"/>
+                <source
+                  srcset="./images/team.img/igor-tab1.jpg 1x, ./images/team.img/igor-tab2.jpg 2x" media="(min-width: 768px )" type="image/jpeg"/>
+                <img
+                  src="./images/team.img/igor-desk1.jpg"
+                  alt="Ігор Дем'яненко"
+                  width="450"/>
+                </picture>
               <div class="team__wrapper wrapper">
                 <h3 class="wrapper__title">Ігор Дем'яненко</h3>
                 <p lang="en" class="wrapper__text">Product Designer</p>
@@ -333,12 +259,17 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="name-title"
-                src="./images/olga.jpg"
-                alt="Ольга Рєпіна"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="./images/team.img/olga-tel1.jpg 1x, ./images/team.img/olga-tel2.jpg 2x" media="(max-width: 767px )" type="image/jpeg"/>
+                <source srcset="./images/team.img/olga-desk1.jpg 1x, ./images/team.img/olga-desk2.jpg 2x" media="(min-width: 1200px )" type="image/jpeg"/>
+                <source
+                  srcset="./images/team.img/olga-tablet1.jpg 1x, ./images/team.img/olga-tablet2.jpg 2x" media="(min-width: 768px )" type="image/jpeg"/>
+                <img
+                  src="./images/team.img/olga-tablet2.jpg"
+                  alt="Ольга Рєпіна"
+                  width="450"/> 
+                </picture>  
               <div class="team__wrapper wrapper">
                 <h3 class="wrapper__title">Ольга Рєпіна</h3>
                 <p lang="en" class="wrapper__text">Frontend Developer</p>
@@ -399,12 +330,17 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="name-title"
-                src="./images/mikola.jpg"
-                alt="Микола Тарасов"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="./images/team.img/mykola-tel1.jpg 1x, ./images/team.img/mykola-tel2.jpg 2x" media="(max-width: 767px )" type="image/jpeg"/>
+                <source srcset="./images/team.img/mykola-desk1.jpg 1x, ./images/team.img/mykola-desk2.jpg 2x" media="(min-width: 1200px )" type="image/jpeg"/>
+                <source
+                  srcset="./images/team.img/mykola-tablet1.jpg 1x, ./images/team.img/mykola-tablet2.jpg 2x" media="(min-width: 768px )" type="image/jpeg"/>
+                <img
+                  src="./images/team.img/mykola-tablet1.jpg"
+                  alt="Микола Тарасов"  
+                  width="450"/>
+                </picture>      
               <div class="team__wrapper wrapper">
                 <h3 class="wrapper__title">Микола Тарасов</h3>
                 <p lang="en" class="wrapper__text">Marketing</p>
@@ -465,12 +401,17 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="name-title"
-                src="./images/michailo.jpg"
-                alt="Михайло Єрмаков"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="./images/team.img/misha-tel1.jpg 1x, ./images/team.img/misha-tel2.jpg 2x" media="(max-width: 767px )" type="image/jpeg"/>
+                <source srcset="./images/team.img/misha-desk1.jpg 1x, ./images/team.img/misha-desk2.jpg 2x" media="(min-width: 1200px )" type="image/jpeg"/>
+                <source
+                  srcset="./images/team.img/misha-tablet1.jpg 1x, ./images/team.img/misha-tablet2.jpg 2x" media="(min-width: 768px )" type="image/jpeg"/>
+                <img
+                  src="./images/team.img/misha-tablet1.jpg"
+                  alt="Михайло Єрмаков"
+                  width="450" /> 
+                </picture>  
               <div class="team__wrapper wrapper">
                 <h3 class="wrapper__title">Михайло Єрмаков</h3>
                 <p lang="en" class="wrapper__text"><a href="/"></a>Designer</p>
@@ -532,7 +473,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <section class="client">
         <div class="client__container container">
           <h2 class="client__title">Постійні клієнти</h2>
@@ -612,9 +553,9 @@
           </ul>
         </div>
       </section>
-    <!-- </main>
-    <footer class="page-footer">
-      <div class="container footer-container">
+    </main>
+     <footer class="page-footer">
+      <div class="footer-container">
         <div class="footer-address-container">
           <a class="footer-logo" href="./index.html">
             <span class="span first-part">Web</span
@@ -643,8 +584,8 @@
               </li>
             </ul>
           </address>
-        </div>
-        <div class="footer-icon-container">
+        </div> 
+         <div class="footer-icon-container">
           <p class="footer-text">приєднуйтесь</p>
           <ul class="footer-list">
             <li class="footer-list-item">
@@ -700,8 +641,8 @@
               </a>
             </li>
           </ul>
-        </div>
-        <div class="footer-speaker-container">
+        </div> 
+         <div class="footer-speaker-container">
           <p class="footer-speaker-text">підпишіться на розсилку</p>
           <form class="footer-speaker-form">
             <label class="footer-label" for="e-mail">
@@ -722,7 +663,7 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="close-btn" type="button" data-modal-close>
@@ -815,7 +756,7 @@
           <button class="form-btn" type="submit">Відправити</button>
         </form>
       </div>
-    </div> -->
+    </div>
     <!-- MOBILE-MENU -->
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
