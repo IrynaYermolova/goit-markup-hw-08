@@ -30,7 +30,7 @@
   }
 }
 
-.team__list {
+.footer-list, .conact-lists, .team__list {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -244,16 +244,16 @@ body {
 }
 
 .footer-btn {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  justify-content: end;
   padding: 10px 28px;
   letter-spacing: 0.06em;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
-  min-width: 200px;
-  min-height: 50px;
+  width: 200px;
+  height: 50px;
+  font-family: inherit;
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -263,15 +263,32 @@ body {
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  margin-left: 12px;
 }
 .footer-btn:hover, .footer-btn:focus {
   background: #188CE8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
+@media screen and (min-width: 480px) and (max-width: 1199.98px) {
+  .footer-btn {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 31px;
+    padding-right: 28px;
+    margin-left: 0;
+  }
+}
 .footer-btn-icon {
   margin-left: 10px;
   fill: var(--main-bg-color);
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 480px) and (max-width: 1199.98px) {
+  .footer-btn-icon {
+    margin-left: 12px;
+  }
 }
 
 .hero-last-btn {
@@ -562,7 +579,7 @@ body {
 
 .footer-logo {
   display: flex;
-  margin-bottom: 60px;
+  margin-bottom: 28px;
   align-items: center;
   justify-content: center;
 }
@@ -1002,32 +1019,67 @@ body {
 }
 
 .page-footer {
-  min-width: 480px;
-  padding: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #2F303A;
 }
 @media screen and (max-width: 1199.98px) {
   .page-footer {
     text-align: center;
-    padding-top: 60px;
-    padding-bottom: 60px;
   }
 }
 
 .footer-container {
   display: block;
-  padding-left: 74px;
 }
-@media screen and (max-width: 767.98px) {
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .footer-container {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    display: flex;
+    align-items: baseline;
   }
 }
 
-.footer-icon-container {
-  display: inline-block;
-  align-items: baseline;
-  margin-left: 70px;
+@media screen and (max-width: 1199.98px) {
+  .footer-address-container {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-address-container {
+    width: 231px;
+  }
+}
+
+@media screen and (max-width: 1199.98px) {
+  .conact-lists {
+    text-align: center;
+  }
+}
+
+.contact-list-list:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+@media screen and (max-width: 1199.98px) {
+  .footer-icon-container {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-icon-container {
+    display: flex;
+    justify-content: center;
+    margin-left: 70px;
+    flex-direction: column;
+  }
 }
 
 .footer-text {
@@ -1038,10 +1090,24 @@ body {
   text-transform: uppercase;
   color: var(--main-bg-color);
   margin-bottom: 20px;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer-text {
+    text-align: start;
+  }
 }
 
 .footer-list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer-list {
+    margin-bottom: 0;
+  }
 }
 
 .footer-list-item:not(:last-child) {
@@ -1112,15 +1178,19 @@ body {
   color: var(--accent-color);
 }
 
-.footer-speaker-container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
 @media screen and (min-width: 1200px) {
   .footer-speaker-container {
-    margin-left: 94px;
+    margin-left: 93px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 570px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-speaker-form {
+    display: flex;
   }
 }
 
@@ -1166,11 +1236,13 @@ body {
   border-radius: 4px;
 }
 
-.footer-label {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 12px;
+@media screen and (min-width: 1200px) {
+  .footer-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+  }
 }
 
 .footer-speaker-form {

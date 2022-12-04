@@ -142,12 +142,21 @@
           <ul class="section__list">
             <li class="section__item">
               <div class="section__product product">
-                <img
+                <!-- <img
                   class="product__img"
                   src="./images/img1.jpg"
                   alt="верстка сайтів"
                   width="370"
-                />
+                /> -->
+                <picture>
+                  <source
+                    srcset="./images/devices/box1.jpg 1x, ./images/devices/box1x2.jpg 2x" type="image/jpeg"/>
+                  <img
+                    src="./images/devices/box1.jpg"
+                    alt="Робота за комп'ютером"
+                    width="370"
+                    height="294" />
+                    </picture>
                 <div class="section__overlay overlay">
                   <p class="overlay__text">десктопні додатки</p>
                 </div>
@@ -155,12 +164,21 @@
             </li>
             <li class="section__item">
               <div class="section__product product">
-                <img
+                <!-- <img
                   class="product__img"
                   src="./images/img2.jpg"
                   alt="розробки телефонних программ"
                   width="370"
-                />
+                /> -->
+                <picture>
+                  <source
+                    srcset="./images/devices/box2.jpg 1x, ./images/devices/box2x2.jpg 2x" type="image/jpeg"/>
+                  <img
+                    src="./images/box2.jpg"
+                    alt="Робота за телефоном"
+                    width="370"
+                    height="294" />
+                    </picture>
                 <div class="section__overlay overlay">
                   <p class="overlay__text">мобільні додатки</p>
                 </div>
@@ -168,12 +186,20 @@
             </li>
             <li class="section__item">
               <div class="section__product product">
-                <img
+                <!-- <img
                   class="product__img"
                   src="./images/img3.jpg"
                   alt="розробки ігор"
                   width="370"
-                />
+                /> -->
+                <picture>
+                  <source srcset="./images/devices/box3.jpg 1x, ./images/devices/box3x2.jpg 2x" type="image/jpeg"/>
+                 <img
+                   src="./images/box3.jpg"
+                   alt="Робота за планшетом"
+                   width="370"
+                   height="294" />
+                   </picture>
                 <div class="section__overlay overlay">
                   <p class="overlay__text">дизайнерські рішення</p>
                 </div>
@@ -763,17 +789,6 @@
         <svg class="burger-icon" width="40"
         height="40">
         <use class="burger-icon1" href="./images/icons.svg#menu-icon-close"></use>
-          <!-- fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24" -->
-        <!-- >
-          <path
-            fill-rule="evenodd"
-            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-            clip-rule="evenodd"
-          ></path> -->
         </svg>
       </button>
 
@@ -807,7 +822,6 @@
       </ul>
 
     </div>
-    <!-- <script src="./js/mobile-menu.js"></script> -->
     <script src="./js/modal.js"></script>
     <script
       defer
