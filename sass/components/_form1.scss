@@ -1,5 +1,5 @@
 .footer-speaker-container {
-   
+   display: block;
   @media screen and (min-width: $desktop) {
     margin-left: 93px;
     display: flex;
@@ -10,7 +10,9 @@
 }
 
 .footer-speaker-form {
-  @media screen and (min-width: $desktop) {
+
+
+  @media screen and (max-width: 1199.98px) {
     display: flex;
   }
 }
@@ -33,7 +35,7 @@
     line-height: calc(20 / 16);
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
-    width: 450px;
+    width: 100%;
     height: 50px;
     background-color: #2F303A;
     border: 1px solid rgba(255, 255, 255, 0.3);

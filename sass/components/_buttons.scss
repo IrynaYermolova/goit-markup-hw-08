@@ -67,19 +67,15 @@
     border-radius: 4px;
    }
 
+  
+
    @media screen and (min-width: $mobile) and (max-width: 1199.98px) {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 31px;
     padding-right: 28px;
-    margin-left: 0;
+    margin-left: 0 auto;
   }
-
-   &-icon {
-    margin-left: 10px;
-    fill: var(--main-bg-color);
-    align-items: center;
-    justify-content: center;
 
     @media screen and (min-width: $mobile) and (max-width: 1199.98px) {
       margin-left: 12px;
@@ -87,6 +83,17 @@
    
    }
 
+
+
+.footer-btn-icon {
+  fill: var(--accent-color);
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+
+  @media screen and (min-width:$mobile) and (max-width: 1199.98px) {
+    margin-left: 12px;
+  }
 }
 
   
