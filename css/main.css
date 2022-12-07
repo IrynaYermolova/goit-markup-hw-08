@@ -589,6 +589,11 @@ body {
   align-items: center;
   justify-content: center;
 }
+@media screen and (min-width: 1200px) {
+  .footer-logo {
+    justify-content: start;
+  }
+}
 
 .header-nav {
   display: none;
@@ -1383,6 +1388,13 @@ body {
   pointer-events: none;
 }
 
+.modal-icon {
+  fill: #000000;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .modal {
   position: absolute;
   top: 50%;
@@ -1399,22 +1411,6 @@ body {
   .modal {
     min-width: 528px;
     min-height: 581px;
-  }
-}
-
-.modal-icon {
-  fill: #000000;
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal {
-  width: 450px;
-}
-@media screen and (min-width: 1200px) {
-  .modal {
-    width: 528px;
   }
 }
 
