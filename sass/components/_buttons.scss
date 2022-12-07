@@ -41,6 +41,7 @@
   .footer-btn {
     display: inline-flex;
     align-items: center;
+    text-align: center;
     padding: 10px 28px;
     letter-spacing: 0.06em;
     font-weight: 700;
@@ -58,7 +59,7 @@
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
-    margin-left: 12px;
+    
 
     &:hover,
     &:focus {
@@ -77,16 +78,17 @@
     margin-left: 0 auto;
   }
 
-    @media screen and (min-width: $mobile) and (max-width: 1199.98px) {
-      margin-left: 12px;
-    }
+  @media screen and (min-width: $desktop) {
+    margin-left: 12px;
+  }
+
    
    }
 
 
 
 .footer-btn-icon {
-  fill: var(--accent-color);
+  fill: #FFFFFF;
   align-items: center;
   justify-content: center;
   margin-left: 10px;
