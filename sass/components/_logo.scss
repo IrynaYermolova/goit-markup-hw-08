@@ -55,7 +55,7 @@
     letter-spacing: 0.03em; 
     color: rgba(255, 255, 255, 1);
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
       font-size: 26px;
       line-height: calc(31 / 26);
   
@@ -67,5 +67,10 @@
     margin-bottom: 28px;
     align-items: center;
     justify-content: center;
+
+    @media screen and (min-width: $desktop) {
+      justify-content: start;
+      
+    }
     
   }
